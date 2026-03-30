@@ -1,3 +1,3 @@
 module Sockudo
-  VERSION = '2.0.4'
+  VERSION = '1.0.0'
 end
