@@ -72,7 +72,7 @@ module Sockudo
       raise ConfigurationError, :key unless @key
       raise ConfigurationError, :secret unless @secret
 
-      Sockudo::Signature::Token.new(@key, @secret)
+      Pusher::Signature::Token.new(@key, @secret)
     end
 
     # @private Builds a url for this app, optionally appending a path

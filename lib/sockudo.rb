@@ -31,10 +31,6 @@ module Sockudo
 
   class HTTPError < Error; attr_accessor :original_error; end
 
-  # Alias Pusher::Signature into the Sockudo namespace so that request signing
-  # works correctly (pusher-signature gem defines Pusher::Signature, not Sockudo::Signature).
-  Signature = Pusher::Signature
-
   class << self
     extend Forwardable
 
